@@ -8,3 +8,9 @@
 Подсказки:
 --- используйте списки и циклы, не дублируйте функции
 """
+
+words = ['разработка', 'администрирование', 'protocol', 'standard']
+
+for word in words:
+    code = word.encode()
+    print(f'{code}, {code.decode()}')

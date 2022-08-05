@@ -1,3 +1,5 @@
+import json
+
 """
 Задание 1.
 
@@ -19,3 +21,14 @@
 
 Все другие варианты сдачи приму только один раз, потом буду ставить НЕ СДАНО
 """
+# json проще и быстрее онлайн-конвертеров
+
+first_word = 'разработка'
+second_word = 'сокет'
+third_word = 'декоратор'
+
+list_words = [first_word, second_word, third_word]
+
+for word in list_words:
+    print(f'{type(word)} - {word}')
+    print(f'{type(json.dumps(word))} - {json.dumps(word)}')

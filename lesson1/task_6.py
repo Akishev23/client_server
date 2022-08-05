@@ -1,3 +1,5 @@
+import chardet
+
 """
 Задание 6.
 
@@ -23,3 +25,34 @@
 
 НАРУШЕНИЕ обозначенных условий - задание не выполнено!!!
 """
+# Так как у меня файл сохраняется в utf, я его сначала конвертну в cp1251
+def convert_to_utf8(file_p):
+    with open(file_p, 'rb') as f:
+        text = f.read()
+        encoding = chardet.detect(text).get('encoding')
+        if encoding != 'utf-8':
+            text = text.decode(encoding)
+            with open(file_p, 'wb') as file:
+                file.write(text.encode('utf-8'))
+
+def convert_to_cp1251(f_path):
+    with open(f_path, 'rb') as f:
+        text = f.read()
+        encoding = chardet.detect(text).get('encoding')
+        if encoding == 'utf-8':
+            text = text.decode(encoding)
+            with open(f_path, 'wb') as file:
+                file.write(text.encode('cp1251'))
+
+
+if __name__ == '__main__':
+
+    file_path = 'test_file.txt'
+
+    convert_to_cp1251(file_path) # кодируем в cp1251 если кодировка отличается (по условию задачи)
+
+    convert_to_utf8(file_path)
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            print(line)
