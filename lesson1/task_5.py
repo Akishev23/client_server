@@ -1,6 +1,5 @@
 import subprocess
 import chardet
-import platform
 
 """
 Задание 5.
@@ -14,7 +13,7 @@ import platform
 
 res = subprocess.Popen(['ping', 'yandex.ru'], stdout=subprocess.PIPE)
 
-output=res.communicate()
+output = res.communicate()
 
 for i in output:
     if i:
