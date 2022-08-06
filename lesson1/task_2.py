@@ -16,11 +16,15 @@ import sys
 
 start_words = ['class', 'function', 'method']
 start_bytes = {b'class', b'function', b'method'}
+
+
 def using_bytes(string):
     return bytes(string, encoding='utf-8')
 
+
 def using_b(string):
-    return b'%a'% string
+    return b'%a' % string
+
 
 if __name__ == '__main__':
     for word in start_words:

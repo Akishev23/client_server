@@ -20,15 +20,14 @@ start_words = ['attribute', 'класс', 'функция', 'type']
 for word in start_words:
     try:
         word.encode('ascii')
-    except UnicodeEncodeError as e:
+    except UnicodeEncodeError:
         print(f'{word} - {using_bytes(word)}')
 
 
 for word in start_words:
     try:
         bytes(word, 'ascii')
-    except UnicodeEncodeError as e:
+    except UnicodeEncodeError:
         print(f'Слово {word} нельзя записать с помощью b""')
         # print(f'{word} - {using_bytes(word)}')
         print(b'%a' % word)
-
