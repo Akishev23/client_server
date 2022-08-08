@@ -1,3 +1,5 @@
+import yaml
+
 """
 3. Задание на закрепление знаний по модулю yaml.
  Написать скрипт, автоматизирующий сохранение данных
@@ -20,24 +22,35 @@ ASCII(например, €);
 """
 
 
+def write_to_yaml(file, data):
+    with open(file, 'w') as f:
+        yaml.dump(all_data, f, allow_unicode=True, default_flow_style=False)
+    return 0
 
 
+def read_from_yaml(file):
+    with open(file, 'r') as f:
+        data = yaml.load(f, Loader=yaml.FullLoader)
+    return data
 
 
+if __name__ == '__main__':
+    items = ['computer', 'printer', 'mouse', 'keyboard']
 
+    items_quantity = 10
 
+    items_ptices = {
+        'computer': '5000€',
+        'printer': '500£',
+        'mouse': '1¥ - ∞',
+        'keyboard': '≈100₽'
+    }
 
+    all_data = {
+        'items': items,
+        'items_quantity': items_quantity,
+        'items_ptice': items_ptices
+    }
 
-
-
-
-import socket
-
-obj_sock = socket.socket()
-
-# bytes ->
-obj_sock.sendto(var, ())
-
-#close
-
-клиент 1) 2)
+    write_to_yaml('stock.yaml', all_data)
+    print(read_from_yaml('stock.yaml'))
