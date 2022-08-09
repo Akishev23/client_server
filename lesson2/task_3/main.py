@@ -24,7 +24,7 @@ ASCII(например, €);
 
 def write_to_yaml(file, data):
     with open(file, 'w') as f:
-        yaml.dump(all_data, f, allow_unicode=True, default_flow_style=False)
+        yaml.dump(all_data, f, allow_unicode=True, default_flow_style=False, encoding='utf-8')
     return 0
 
 
@@ -39,17 +39,17 @@ if __name__ == '__main__':
 
     items_quantity = 10
 
-    items_ptices = {
-        'computer': '5000€',
-        'printer': '500£',
-        'mouse': '1¥ - ∞',
-        'keyboard': '≈100₽'
+    items_prices = {
+        'computer': '5000\u20ac',
+        'printer': '500\u00a3',
+        'mouse': '1\u00a5- \u221e',
+        'keyboard': '\u2248100\u20bd'
     }
 
     all_data = {
         'items': items,
         'items_quantity': items_quantity,
-        'items_ptice': items_ptices
+        'items_ptice': items_prices
     }
 
     write_to_yaml('stock.yaml', all_data)
