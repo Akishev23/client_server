@@ -11,7 +11,7 @@ def main_loop():
         print('Не указаны основные параметры запуска, применяю умолчания')
         server_adress, server_port = DEFAULT_IP_ADDRESS, DEFAULT_PORT
     elif len(sys.argv) == 2:
-        print('Не указан порт, прменяю умолчание')
+        print('Не указан порт, применяю умолчание')
         _, server_adress = sys.argv
         server_port = DEFAULT_PORT
     else:

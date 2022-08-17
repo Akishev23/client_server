@@ -50,7 +50,6 @@ def main_server():
     except (ValueError, JSONDecodeError):
         print('Invalid message format')
         client.close()
-        clients.remove(client)
 
 
 if __name__== '__main__':
