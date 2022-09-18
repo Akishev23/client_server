@@ -1,22 +1,27 @@
 import socket
-import json
-import threading
 import sys
+import threading
+import logging
+
 from useful.functions import listen_and_get, decode_and_send, say_hello, check_port
 from useful.variables import DEFAULT_PORT, DEFAULT_IP_ADDRESS
+from lesson5_logging.log_scripts import common_logging
+
+logger = logging.getLogger('client')
 
 
 def main_loop():
     if len(sys.argv) < 2:
-        print('Не указаны основные параметры запуска, применяю умолчания')
+        logger.info('Не указаны основные параметры запуска, применяю умолчания')
         server_adress, server_port = DEFAULT_IP_ADDRESS, DEFAULT_PORT
     elif len(sys.argv) == 2:
-        print('Не указан порт, применяю умолчание')
+        logger.info('Не указан порт, применяю умолчание')
         _, server_adress = sys.argv
         server_port = DEFAULT_PORT
     else:
         _, server_adress, server_port, *i = sys.argv
     if not check_port(server_port):
+        logger.error(f'wrong port: {server_port}')
         sys.exit(1)
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((server_adress, server_port))
@@ -26,8 +31,5 @@ def main_loop():
     threading.Thread(target=listen_and_get, args=(sock,)).start()
 
 
-
-
 if __name__ == '__main__':
     main_loop()
-
