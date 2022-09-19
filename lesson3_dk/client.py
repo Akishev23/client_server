@@ -5,17 +5,15 @@ import logging
 
 from useful.functions import listen_and_get, decode_and_send, say_hello, check_port
 from useful.variables import DEFAULT_PORT, DEFAULT_IP_ADDRESS
-from lesson5_logging.log_scripts import common_logging
+from decor import logger, log
 
-logger = logging.getLogger('client')
-
-
+@log
 def main_loop():
     if len(sys.argv) < 2:
         logger.info('Не указаны основные параметры запуска, применяю умолчания')
         server_adress, server_port = DEFAULT_IP_ADDRESS, DEFAULT_PORT
     elif len(sys.argv) == 2:
-        logger.info('Не указан порт, применяю умолчание')
+        legger.info('Не указан порт, применяю умолчание')
         _, server_adress = sys.argv
         server_port = DEFAULT_PORT
     else:
@@ -28,7 +26,7 @@ def main_loop():
     greeting = say_hello()
     # threading.Thread(target=decode_and_send, args=(sock, greeting)).start()
     decode_and_send(sock, greeting)
-    threading.Thread(target=listen_and_get, args=(sock,)).start()
+    listen_and_get(sock)
 
 
 if __name__ == '__main__':

@@ -26,12 +26,11 @@ logger_config = {
         },
         'file_server': {
             'class': 'logging.handlers.TimedRotatingFileHandler',
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'formatter': 'file_format',
             'filename': '../lesson5_logging/logs/server.log',
             'interval': 1,
             'when': 'midnight',
-            'backupCount': 5,
             'encoding': 'utf-8'
         },
         'file_client': {

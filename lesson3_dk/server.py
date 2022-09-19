@@ -2,19 +2,19 @@ import socket
 import threading
 import logging
 import sys
+import os
 from json import JSONDecodeError
 from variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, PRESENCE, TIME, \
     USER, ERROR, DEFAULT_PORT, DEFAULT_IP_ADDRESS
 from functions import check_port, listen_and_get, decode_and_send, decode_message
-from lesson5_logging.log_scripts import common_logging
-import sys
-import os
+from decor import logger, log
+
 
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-logger = logging.getLogger('server')
 
 
+@log
 def process_client_message(message):
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
             and USER in message and message[USER][ACCOUNT_NAME] == 'guest':
@@ -26,14 +26,14 @@ def process_client_message(message):
         ERROR: 'Bad Request'
     }
 
-
+@log
 def accept_client(sock):
     while True:
         client, address = sock.accept()
         logger.info(f'Client with address {address} connected')
         return client, address
 
-
+@log
 def main_server():
     listen_port = DEFAULT_PORT
     listen_address = DEFAULT_IP_ADDRESS
@@ -68,3 +68,4 @@ def main_server():
 
 if __name__ == '__main__':
     main_server()
+
