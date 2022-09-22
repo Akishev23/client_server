@@ -1,14 +1,15 @@
 """
 the body of logger
 """
-
+# -*- coding: utf-8 -*-
 import logging.config
-from log_settings import logger_config
+from .log_settings import logger_config
 
 logging.config.dictConfig(logger_config)
 
 log_server = logging.getLogger('server')
 log_client = logging.getLogger('client')
+
 
 def main():
     """

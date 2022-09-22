@@ -1,8 +1,7 @@
-import logging
 import os
 import sys
 import inspect
-
+import logging
 from functools import wraps
 from lesson5_logging.log_scripts import common_logging
 
@@ -20,7 +19,7 @@ def log(func):
                     f'run function {func.__name__} with parameters {args} , {kwargs}  '"\n"
                     f'from module {os.path.basename(sys.argv[0])}'"\n"
                     f'from function {inspect.stack()[1][3]}'"\n",
-                    stacklevel = 2)
+                    stacklevel=2)
 
         return result_of_function
 

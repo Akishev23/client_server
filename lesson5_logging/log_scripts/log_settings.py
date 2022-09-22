@@ -1,6 +1,7 @@
 """
 config of common logger
 """
+# -*- coding: utf-8 -*-
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
@@ -28,7 +29,7 @@ logger_config = {
             'class': 'logging.handlers.TimedRotatingFileHandler',
             'level': 'DEBUG',
             'formatter': 'file_format',
-            'filename': '../lesson5_logging/logs/server.log',
+            'filename': './lesson5_logging/logs/server.log',
             'interval': 1,
             'when': 'midnight',
             'encoding': 'utf-8'
@@ -37,7 +38,7 @@ logger_config = {
             'class': 'logging.FileHandler',
             'level': 'DEBUG',
             'formatter': 'file_format',
-            'filename': '../lesson5_logging/logs/client.log',
+            'filename': './lesson5_logging/logs/client.log',
             'encoding': 'utf-8'
         }
     },

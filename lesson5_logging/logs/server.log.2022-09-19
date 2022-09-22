@@ -1,0 +1,255 @@
+2022-09-19 04:10:28,007 - server - decor:write_log:16 - run function main_server with parameters () , {}  
+from module __main__
+from function <function main_server at 0x0000025C19400550>
+
+2022-09-19 04:10:28,013 - server - decor:write_log:16 - run function accept_client with parameters (<socket.socket fd=844, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module __main__
+from function <function accept_client at 0x0000025C19400430>
+
+2022-09-19 04:10:46,186 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663549846.1861653, 'user': {'account_name': 'guest'}}
+2022-09-19 04:10:46,186 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60002) connected
+2022-09-19 04:10:46,192 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663549846.1861653, 'user': {'account_name': 'guest'}}
+2022-09-19 04:10:46,192 - server - decor:write_log:16 - run function process_client_message with parameters ({'action': 'presence', 'time': 1663549846.1861653, 'user': {'account_name': 'guest'}},) , {}  
+from module __main__
+from function <function process_client_message at 0x0000025C19356A70>
+
+2022-09-19 04:10:46,192 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663549846.1861653, 'user': {'account_name': 'guest'}}
+2022-09-19 04:10:46,192 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:10:46,194 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 04:14:35,437 - server - decor:write_log:16 - run function main_server with parameters () , {}  
+from module __main__
+from function <function main_server at 0x0000016083E54550>
+
+2022-09-19 04:14:35,437 - server - decor:write_log:16 - run function accept_client with parameters (<socket.socket fd=964, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module __main__
+from function <function accept_client at 0x0000016083E54430>
+
+2022-09-19 04:17:00,145 - server - decor:write_log:18 - run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:17:00,148 - server - decor:write_log:18 - run function accept_client with parameters (<socket.socket fd=864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:18:01,706 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:18:01,708 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:18:48,923 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:18:48,926 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=624, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:19:22,427 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663550362.427292, 'user': {'account_name': 'guest'}}
+2022-09-19 04:19:22,427 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60133) connected
+2022-09-19 04:19:22,428 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663550362.427292, 'user': {'account_name': 'guest'}}
+2022-09-19 04:19:22,430 - server - decor:write_log:18 - 
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663550362.427292, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:19:22,431 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663550362.427292, 'user': {'account_name': 'guest'}}
+2022-09-19 04:19:22,431 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:19:22,431 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 04:36:57,137 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:36:57,140 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:37:08,320 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663551428.320828, 'user': {'account_name': 'guest'}}
+2022-09-19 04:37:08,321 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60553) connected
+2022-09-19 04:37:08,321 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663551428.320828, 'user': {'account_name': 'guest'}}
+2022-09-19 04:37:08,324 - server - decor:write_log:18 - 
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663551428.320828, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:37:08,324 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663551428.320828, 'user': {'account_name': 'guest'}}
+2022-09-19 04:37:08,325 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:37:08,325 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 04:37:45,006 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:37:45,009 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:37:47,762 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663551467.7628083, 'user': {'account_name': 'guest'}}
+2022-09-19 04:37:47,762 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60563) connected
+2022-09-19 04:37:47,763 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663551467.7628083, 'user': {'account_name': 'guest'}}
+2022-09-19 04:37:47,765 - server - decor:write_log:18 - 
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663551467.7628083, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:37:47,766 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663551467.7628083, 'user': {'account_name': 'guest'}}
+2022-09-19 04:37:47,766 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:37:47,766 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 04:38:07,853 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:38:07,855 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:38:10,506 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663551490.5066838, 'user': {'account_name': 'guest'}}
+2022-09-19 04:38:10,506 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60570) connected
+2022-09-19 04:38:10,507 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663551490.5066838, 'user': {'account_name': 'guest'}}
+2022-09-19 04:38:10,510 - server - decor:write_log:18 - 
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663551490.5066838, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:38:10,510 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663551490.5066838, 'user': {'account_name': 'guest'}}
+2022-09-19 04:38:10,510 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:38:10,510 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 04:38:29,434 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:38:29,437 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=684, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:38:33,938 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663551513.938198, 'user': {'account_name': 'guest'}}
+2022-09-19 04:38:33,938 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60583) connected
+2022-09-19 04:38:33,939 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663551513.938198, 'user': {'account_name': 'guest'}}
+2022-09-19 04:38:33,941 - server - decor:write_log:18 - 
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663551513.938198, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:38:33,942 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663551513.938198, 'user': {'account_name': 'guest'}}
+2022-09-19 04:38:33,942 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:38:33,942 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 04:41:25,389 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:41:25,394 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=1000, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:41:37,252 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663551697.2521763, 'user': {'account_name': 'guest'}}
+2022-09-19 04:41:37,252 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60637) connected
+2022-09-19 04:41:37,252 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663551697.2521763, 'user': {'account_name': 'guest'}}
+2022-09-19 04:41:37,255 - server - decor:write_log:18 - 
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663551697.2521763, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:41:37,255 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663551697.2521763, 'user': {'account_name': 'guest'}}
+2022-09-19 04:41:37,255 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:41:37,256 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 04:46:57,236 - server - decor:write_log:18 - 
+run function main_server with parameters () , {}  
+from module server.py
+from function <module>
+
+2022-09-19 04:46:57,239 - server - decor:write_log:18 - 
+run function accept_client with parameters (<socket.socket fd=780, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:47:01,872 - server - functions:decode_message:14 - message has been decoded {'action': 'presence', 'time': 1663552021.87287, 'user': {'account_name': 'guest'}}
+2022-09-19 04:47:01,872 - server - server:accept_client:34 - Client with address ('127.0.0.1', 60789) connected
+2022-09-19 04:47:01,872 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663552021.87287, 'user': {'account_name': 'guest'}}
+2022-09-19 04:47:01,875 - server - decor:write_log:18 - 
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663552021.87287, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 04:47:01,875 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663552021.87287, 'user': {'account_name': 'guest'}}
+2022-09-19 04:47:01,875 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 04:47:01,876 - server - functions:decode_message:14 - message has been decoded {'response': 200}
+2022-09-19 16:43:23,810 - server - functions:decode_message:12 - message has been decoded {'action': 'presence', 'time': 1663595003.810142, 'user': {'account_name': 'guest'}}
+2022-09-19 16:43:23,810 - server - server:accept_client:34 - Client with address ('127.0.0.1', 56872) connected
+2022-09-19 16:43:23,826 - server - server:main_server:55 - starting the log of deco
+run function accept_client with parameters (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:43:23,826 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663595003.810142, 'user': {'account_name': 'guest'}}
+2022-09-19 16:43:23,826 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663595003.810142, 'user': {'account_name': 'guest'}}
+2022-09-19 16:43:23,827 - server - server:main_server:61 - starting the log of deco
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663595003.810142, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:43:23,827 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 16:43:23,827 - server - functions:decode_message:12 - message has been decoded {'response': 200}
+2022-09-19 16:48:12,709 - server - server:accept_client:34 - Client with address ('127.0.0.1', 56967) connected
+'time': 1663595292.709402, 'user': {'account_name': 'guest'}}
+2022-09-19 16:48:12,725 - server - server:main_server:55 - starting the log of deco
+run function accept_client with parameters (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:48:12,725 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663595292.709402, 'user': {'account_name': 'guest'}}
+2022-09-19 16:48:12,726 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663595292.709402, 'user': {'account_name': 'guest'}}
+2022-09-19 16:48:12,726 - server - server:main_server:61 - starting the log of deco
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663595292.709402, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:48:12,727 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 16:48:12,727 - server - functions:decode_message:12 - message has been decoded {'response': 200}
+2022-09-19 16:49:23,234 - server - server:accept_client:34 - Client with address ('127.0.0.1', 56985) connected
+2022-09-19 16:49:23,235 - server - functions:decode_message:12 - message has been decoded {'action': 'presence', 'time': 1663595363.2347183, 'user': {'account_name': 'guest'}}
+2022-09-19 16:49:23,252 - server - server:main_server:55 - starting the log of deco
+run function accept_client with parameters (<socket.socket fd=332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:49:23,252 - server - server:main_server:60 - got message from client: {'action': 'presence', 'time': 1663595363.2347183, 'user': {'account_name': 'guest'}}
+2022-09-19 16:49:23,252 - server - server:process_client_message:22 - got correct message from client {'action': 'presence', 'time': 1663595363.2347183, 'user': {'account_name': 'guest'}}
+2022-09-19 16:49:23,253 - server - server:main_server:61 - starting the log of deco
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663595363.2347183, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:49:23,253 - server - server:main_server:62 - here is a processed message {'response': 200}
+2022-09-19 16:49:23,253 - server - functions:decode_message:12 - message has been decoded {'response': 200}
+2022-09-19 16:58:20,162 - server - server:accept_client:33 - Client with address ('127.0.0.1', 57211) connected
+2022-09-19 16:58:20,177 - server - server:main_server:54 - starting the log of deco
+run function accept_client with parameters (<socket.socket fd=464, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777)>,) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:58:20,177 - server - functions:listen_and_get:21 - got message from sender {'action': 'presence', 'time': 1663595900.1628141, 'user': {'account_name': 'guest'}}
+2022-09-19 16:58:20,178 - server - server:main_server:59 - got message from client: {'action': 'presence', 'time': 1663595900.1628141, 'user': {'account_name': 'guest'}}
+2022-09-19 16:58:20,178 - server - server:process_client_message:21 - got correct message from client {'action': 'presence', 'time': 1663595900.1628141, 'user': {'account_name': 'guest'}}
+2022-09-19 16:58:20,179 - server - server:main_server:60 - starting the log of deco
+run function process_client_message with parameters ({'action': 'presence', 'time': 1663595900.1628141, 'user': {'account_name': 'guest'}},) , {}  
+from module server.py
+from function main_server
+
+2022-09-19 16:58:20,179 - server - server:main_server:61 - here is a processed message {'response': 200}
+2022-09-19 16:58:20,179 - server - functions:decode_message:12 - message has been decoded {'response': 200}
