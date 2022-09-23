@@ -23,7 +23,8 @@ def main():
         k_test = 1 / 0
         return k_test
     except Exception:
-        log_client.exception(f'Исключение, проблема ниже')
+        log_client.exception('Got exception')
+        return
 
 
 if __name__ == '__main__':

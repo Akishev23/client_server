@@ -64,7 +64,8 @@ def main_server():
 
     listen_address, listen_port = args_parser()
 
-    logger.info(f'Запускаю сервер с параметрами port = {listen_port}, address = {listen_address}')
+    logger.info(f'Launching server with parameters port= {listen_port}, address ='
+                f' {listen_address}')
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind((listen_address, listen_port))
     sock.settimeout(0.2)
@@ -97,7 +98,7 @@ def main_server():
                     msg = listen_and_get(cl)
                     process_client_message(msg, messages, cl)
                 except Exception:
-                    logger.info(f'Соединение с {cl.getpeername()} потеряно')
+                    logger.info(f'Connection with {cl.getpeername()} has been lost')
                     clients.remove(cl)
         if messages and clients_to_send:
             msg = {
@@ -111,7 +112,7 @@ def main_server():
                 try:
                     decode_and_send(wc, msg)
                 except Exception:
-                    logger.info(f'Соединение с {wc.getpeername()} потеряно')
+                    logger.info(f'Connection with {wc.getpeername()} has been lost')
                     clients.remove(wc)
 
 

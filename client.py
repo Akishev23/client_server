@@ -22,12 +22,12 @@ def read_message(message):
     """
     checking_key = [ACTION, SENDER, MESSAGE_TEXT]
     if all(message.get(key) for key in checking_key) and message.get('action') == MESSAGE:
-        logger.info(f'Получено сообщение от {message[SENDER]}' "\n"
+        logger.info(f'got message {message[SENDER]}' "\n"
                     f'--------------------------------------------'
                     f'{message[MESSAGE_TEXT]}')
         print(message.get(MESSAGE_TEXT))
     else:
-        logger.info(f'Сообщение имеет некорректный формат'
+        logger.info(f'wrong format of the message'
                     f'{message}')
 
 
@@ -39,10 +39,10 @@ def form_message(socket_that: socket.socket, name):
     :param name: str
     :return: message dictionary
     """
-    message = input('Введите текст сообщения либо "exit" для выхода из программы: "\n"')
+    message = input('input message or "exit" to quit: "\n"')
     if message == 'exit':
         socket_that.close()
-        logger.info('Выхожу по команде')
+        logger.info('closing connection')
         sys.exit()
     ms_ready = {
         ACTION: 'message',
@@ -50,7 +50,7 @@ def form_message(socket_that: socket.socket, name):
         ACCOUNT_NAME: name,
         MESSAGE_TEXT: message
     }
-    logger.debug('Сообщение обработано')
+    logger.debug('message procecced')
     return ms_ready
 
 
@@ -70,44 +70,44 @@ def hello_answer(message):
 @log
 def main_loop():
     """
-    Функция-ядро работы клиентской части
+    client's part of the program
     :return: nothing
     """
     address, port, mode, name = args_parser()
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((address, port))
-    logger.info(f'Клиент с параметрами {address} - {port} - {mode} - {name} запущен')
+    logger.info(f'client with keys {address} - {port} - {mode} - {name} launched')
     try:
         greeting = say_hello(name)
         decode_and_send(sock, greeting)
         listened = listen_and_get(sock)
         answer = hello_answer(listened)
-        logger.info(f'Получено подтверждение сервера, {answer}')
-        print(f'Получено подтверждение сервера, {answer}')
+        logger.info(f'got server"s approve, {answer}')
+        print(f'got server"s approve, {answer}')
     except json.JSONDecodeError:
-        logger.error('Не удалось декодировать сообщение')
+        logger.error('Unable to decode the message')
         sys.exit(1)
     except ServerError as error:
-        logger.error(f'Ошибка сервера, {error}')
+        logger.error(f'Error of the server, {error}')
     except ConnectionRefusedError:
-        logger.error('Подключение не удалось либо было утеряно')
+        logger.error('Connection has been refused')
         sys.exit(1)
     else:
-        print(f'Режим работы - {mode}')
+        print(f'mode - {mode}')
         while True:
             if mode == 'send':
                 try:
                     message = form_message(sock, name)
                     decode_and_send(sock, message)
                 except Exception:
-                    logger.exception('Выброс исключения')
+                    logger.exception('exception got')
                     sys.exit(1)
             else:
                 try:
                     message = listen_and_get(sock)
                     read_message(message)
                 except Exception:
-                    logger.exception('Выброс исключения')
+                    logger.exception('exception got')
                     sys.exit(1)
 
 

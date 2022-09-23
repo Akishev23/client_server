@@ -93,7 +93,7 @@ def args_parser():
         logger.error(f'wrong port: {port}')
         sys.exit(1)
     if not flag and mode not in ['listen', 'send']:
-        logger.error(f'Неверно указан режим работы - {mode}')
+        logger.error(f'wrong mode - {mode}')
         sys.exit(1)
     if not flag:
         return address, port, mode, name
