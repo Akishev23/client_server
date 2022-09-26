@@ -9,9 +9,9 @@ import os
 import sys
 import argparse
 import portion as p
-from .variables import MAX_PACKAGE_LENGTH, ENCODING, ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
-    DEFAULT_IP_ADDRESS, DEFAULT_PORT
 from decor import logger, log
+from .variables import MAX_PACKAGE_LENGTH, ENCODING, ACTION, PRESENCE, TIME, \
+    DEFAULT_IP_ADDRESS, DEFAULT_PORT, SENDER, MESSAGE_TEXT
 
 
 @log
@@ -26,7 +26,10 @@ def listen_and_get(client: socket.socket):
         incoming_message_raw = client.recv(MAX_PACKAGE_LENGTH).decode(ENCODING)
         if incoming_message_raw:
             incoming_message = json.loads(incoming_message_raw)
-            logger.debug(f'got message from sender {incoming_message}')
+            bool_message = incoming_message.get(MESSAGE_TEXT)
+            sender = incoming_message.get(SENDER) if bool_message else 'server'
+            logger.debug(f'got message from sender @{sender}@ '
+                         f'{incoming_message.get(MESSAGE_TEXT) if bool_message else incoming_message}')
             if isinstance(incoming_message, dict):
                 return incoming_message
 
@@ -35,6 +38,7 @@ def listen_and_get(client: socket.socket):
 def decode_and_send(this_socket: socket.socket, message: dict):
     outgoing_message = decode_message(message)
     this_socket.send(outgoing_message)
+    logger.info('message: %s has been successfully sent', outgoing_message)
 
 
 @log
@@ -42,9 +46,7 @@ def say_hello(account_name):
     resp = {
         ACTION: PRESENCE,
         TIME: time.time(),
-        USER: {
-            ACCOUNT_NAME: account_name
-        }
+        SENDER: account_name
     }
     logger.info(f'made a greeting message {resp}')
     return resp

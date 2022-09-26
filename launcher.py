@@ -16,12 +16,10 @@ while True:
         n = int(param.strip('s'))
         processes.append(subprocess.Popen('python server.py',
                                           creationflags=subprocess.CREATE_NEW_CONSOLE))
-        for i in range(n):
-            processes.append(subprocess.Popen('python client.py -m send',
+        for i in range(1, n + 1):
+            processes.append(subprocess.Popen(f'python client.py -n test{i}',
                                               creationflags=subprocess.CREATE_NEW_CONSOLE))
-        for i in range(n):
-            processes.append(subprocess.Popen('python client.py -m listen',
-                                              creationflags=subprocess.CREATE_NEW_CONSOLE))
+
     elif param == 'x':
         while processes:
             p_to_del = processes.pop()

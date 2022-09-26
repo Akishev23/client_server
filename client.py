@@ -6,11 +6,12 @@ import json
 import time
 import socket
 import sys
+import threading
 from libr.functions import listen_and_get, decode_and_send, say_hello, args_parser
-from libr.variables import MESSAGE, MESSAGE_TEXT, TIME, ACTION, ACCOUNT_NAME, SENDER, ERROR, \
-    RESPONSE
-from decor import logger, log
+from libr.variables import MESSAGE, MESSAGE_TEXT, TIME, ACTION, SENDER, ERROR, \
+    RESPONSE, EXIT, RECEIVER
 from libr.errors import ServerError
+from decor import logger, log
 
 
 @log
@@ -39,25 +40,28 @@ def form_message(socket_that: socket.socket, name):
     :param name: str
     :return: message dictionary
     """
-    message = input('input message or "exit" to quit: "\n"')
-    if message == 'exit':
-        socket_that.close()
-        logger.info('closing connection')
-        sys.exit()
+    receiver = input('Input to whom message is addressed \n')
+    message = input('input message \n')
     ms_ready = {
         ACTION: 'message',
+        SENDER: name,
+        RECEIVER: receiver,
         TIME: time.time(),
-        ACCOUNT_NAME: name,
         MESSAGE_TEXT: message
     }
-    logger.debug('message procecced')
-    return ms_ready
+    logger.info('message processed')
+    try:
+        decode_and_send(socket_that, ms_ready)
+        logger.info(f'message for {receiver} from {name} has been successfully sent')
+    except Exception:
+        logger.exception('exception')
+        sys.exit(1)
 
 
 @log
 def hello_answer(message):
     """
-    'Reading answer from server when "hello" is sent
+    Reading answer from server when "hello" is sent
     :param message: dictionary
     :return: status of response
     """
@@ -68,12 +72,85 @@ def hello_answer(message):
 
 
 @log
+def create_exit_message(name):
+    """
+    creating notification regarding exit
+    :param name: str
+    :return: None
+    """
+    return {
+        ACTION: EXIT,
+        TIME: time.time(),
+        SENDER: name
+    }
+
+
+@log
+def getting_message_from_server(sock, name):
+    """
+    function which handles the messages from server
+    :param sock: socket object
+    :param name: str
+    :return: None
+    """
+    while True:
+        try:
+            msg = listen_and_get(sock)
+            check_dict = [ACTION, SENDER, RECEIVER, MESSAGE_TEXT]
+            if all(msg.get(key) for key in check_dict) and msg[ACTION] == 'message' and \
+                    msg[RECEIVER] == name:
+                print(f'Message from user {msg[SENDER]}:'
+                      f'\n {msg[MESSAGE_TEXT]}')
+            else:
+                logger.error(f'Wrong format of message from server: {msg}')
+        except Exception:
+            logger.exception('exception, see further')
+
+
+@log
+def get_help():
+    print('Admissible commands')
+    print('message - type your message')
+    print('help - print help')
+    print('exit - exit')
+
+
+@log
+def user_helper(sock, name):
+    """
+    function which asks for command and sends messages
+    :param sock: socket object
+    :param name: str
+    :return: None
+    """
+    get_help()
+    while True:
+        command = input('Input command \n')
+        if command == 'message':
+            form_message(sock, name)
+        elif command == 'help':
+            get_help()
+        elif command == 'exit':
+            decode_and_send(sock, create_exit_message(name))
+            print('connection is closed')
+            logger.info('connection is closed according to users command')
+            time.sleep(0.5)
+            break
+        else:
+            print('Could not recognize command')
+
+
+@log
 def main_loop():
     """
     client's part of the program
     :return: nothing
     """
+    print('Messager')
     address, port, mode, name = args_parser()
+    if not name:
+        name = input('input your name')
+    print(f'Your nickname is: {name}')
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((address, port))
     logger.info(f'client with keys {address} - {port} - {mode} - {name} launched')
@@ -89,26 +166,25 @@ def main_loop():
         sys.exit(1)
     except ServerError as error:
         logger.error(f'Error of the server, {error}')
-    except ConnectionRefusedError:
+    except (ConnectionRefusedError, ConnectionError):
         logger.error('Connection has been refused')
         sys.exit(1)
     else:
-        print(f'mode - {mode}')
+        print('Messager')
+        print(f'Your nickname is: {name}')
+
+        rec = threading.Thread(target=getting_message_from_server, args=(sock, name),
+                               daemon=True)
+        rec.start()
+        user_int = threading.Thread(target=user_helper, args=(sock, name), daemon=True)
+        user_int.start()
+        logger.info('all processed are launched')
+
         while True:
-            if mode == 'send':
-                try:
-                    message = form_message(sock, name)
-                    decode_and_send(sock, message)
-                except Exception:
-                    logger.exception('exception got')
-                    sys.exit(1)
-            else:
-                try:
-                    message = listen_and_get(sock)
-                    read_message(message)
-                except Exception:
-                    logger.exception('exception got')
-                    sys.exit(1)
+            time.sleep(0.5)
+            if rec.is_alive() and user_int.is_alive():
+                continue
+            break
 
 
 if __name__ == '__main__':

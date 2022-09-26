@@ -2322,3 +2322,1356 @@ from module client.py
 from function main_loop
 
 2022-09-22 04:06:41,440 - client - client:main_loop:85 - Получено подтверждение сервера, 200 : ok
+2022-09-26 02:27:00,178 - client - functions:args_parser:79 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:27:00,179 - client - functions:args_parser:79 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:27:00,180 - client - functions:args_parser:92 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:27:00,180 - client - functions:args_parser:92 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:27:00,180 - client - functions:args_parser:79 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:27:00,181 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,181 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,182 - client - functions:args_parser:92 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:27:00,182 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,686 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 02:27:00,686 - client - functions:say_hello:49 - made a greeting message {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test1'}}
+2022-09-26 02:27:00,686 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test0 launched
+2022-09-26 02:27:00,686 - client - functions:say_hello:49 - made a greeting message {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test0'}}
+2022-09-26 02:27:00,686 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+2022-09-26 02:27:00,686 - client - functions:say_hello:49 - made a greeting message {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test2'}}
+2022-09-26 02:27:00,687 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,687 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test1'}}
+2022-09-26 02:27:00,687 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test0',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,687 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test0'}}
+2022-09-26 02:27:00,687 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,687 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test2'}}
+2022-09-26 02:27:00,688 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test1'}},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:27:00,688 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test0'}},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:27:00,688 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test2'}},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:27:00,688 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59425), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test1'}}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,688 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59426), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test0'}}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,689 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59427), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664148420.6865547, 'user': {'account_name': 'test2'}}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,715 - client - functions:listen_and_get:29 - got message from sender {'response': 200}
+2022-09-26 02:27:00,715 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=512, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59425), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,716 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,716 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 02:27:00,718 - client - client:main_loop:180 - all processed are launched
+2022-09-26 02:27:00,719 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 02:27:00,755 - client - functions:listen_and_get:29 - got message from sender {'response': 200}
+2022-09-26 02:27:00,756 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59426), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,756 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,756 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 02:27:00,757 - client - client:main_loop:180 - all processed are launched
+2022-09-26 02:27:00,758 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 02:27:00,788 - client - functions:listen_and_get:29 - got message from sender {'response': 200}
+2022-09-26 02:27:00,788 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59427), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,788 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:27:00,788 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 02:27:00,789 - client - client:main_loop:180 - all processed are launched
+2022-09-26 02:27:00,791 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 02:36:03,476 - client - functions:args_parser:79 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:36:03,476 - client - functions:args_parser:79 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:36:03,477 - client - functions:args_parser:92 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:36:03,477 - client - functions:args_parser:92 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:36:03,478 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,478 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,479 - client - functions:args_parser:79 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:36:03,479 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test0 launched
+2022-09-26 02:36:03,479 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 02:36:03,479 - client - functions:say_hello:49 - made a greeting message {'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test0'}}
+2022-09-26 02:36:03,479 - client - functions:say_hello:49 - made a greeting message {'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test1'}}
+2022-09-26 02:36:03,480 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test0',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,480 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test0'}}
+2022-09-26 02:36:03,480 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,480 - client - functions:args_parser:92 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:36:03,480 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test1'}}
+2022-09-26 02:36:03,481 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,481 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test0'}},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:36:03,481 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test1'}},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:36:03,482 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59645), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test0'}}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,483 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+arameters (<socket.socket fd=572, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59646), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664148963.4796624, 'user': {'account_name': 'test1'}}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,483 - client - functions:say_hello:49 - made a greeting message {'action': 'presence', 'time': 1664148963.4836516, 'user': {'account_name': 'test2'}}
+2022-09-26 02:36:03,487 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:36:03,488 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664148963.4836516, 'user': {'account_name': 'test2'}}
+2022-09-26 02:36:03,493 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664148963.4836516, 'user': {'account_name': 'test2'}},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:36:03,496 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59647), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664148963.4836516, 'user': {'account_name': 'test2'}}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,080 - client - functions:args_parser:77 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:48:17,081 - client - functions:args_parser:90 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:48:17,082 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,083 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 02:48:17,083 - client - functions:say_hello:47 - made a greeting message {'action': 'presence', 'time': 1664149697.0830197, 'sender': 'test1'}
+2022-09-26 02:48:17,083 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,084 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664149697.0830197, 'sender': 'test1'}
+2022-09-26 02:48:17,084 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664149697.0830197, 'sender': 'test1'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:48:17,085 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59881), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664149697.0830197, 'sender': 'test1'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,103 - client - functions:args_parser:77 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:48:17,104 - client - functions:args_parser:90 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 02:48:17,104 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,105 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test0 launched
+2022-09-26 02:48:17,105 - client - functions:say_hello:47 - made a greeting message {'action': 'presence', 'time': 1664149697.1059585, 'sender': 'test0'}
+2022-09-26 02:48:17,106 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test0',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,106 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664149697.1059585, 'sender': 'test0'}
+2022-09-26 02:48:17,107 - client - functions:decode_and_send:36 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664149697.1059585, 'sender': 'test0'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 02:48:17,107 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59882), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664149697.1059585, 'sender': 'test0'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,110 - client - functions:listen_and_get:29 - got message from sender {'response': 200}
+2022-09-26 02:48:17,111 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59881), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,112 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,112 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 02:48:17,113 - client - client:main_loop:180 - all processed are launched
+2022-09-26 02:48:17,114 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 02:48:17,323 - client - functions:listen_and_get:29 - got message from sender {'response': 200}
+2022-09-26 02:48:17,324 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59882), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,325 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 02:48:17,325 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 02:48:17,330 - client - client:main_loop:180 - all processed are launched
+2022-09-26 02:48:17,333 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:16:29,863 - client - functions:args_parser:80 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:16:29,869 - client - functions:args_parser:93 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:16:29,869 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,870 - client - functions:args_parser:80 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:16:29,871 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+2022-09-26 03:16:29,871 - client - functions:say_hello:50 - made a greeting message {'action': 'presence', 'time': 1664151389.8718894, 'sender': 'test2'}
+2022-09-26 03:16:29,872 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,872 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664151389.8718894, 'sender': 'test2'}
+2022-09-26 03:16:29,872 - client - functions:args_parser:93 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:16:29,873 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664151389.8718894, 'sender': 'test2'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:16:29,873 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,873 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60426), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664151389.8718894, 'sender': 'test2'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,876 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 03:16:29,876 - client - functions:say_hello:50 - made a greeting message {'action': 'presence', 'time': 1664151389.8768759, 'sender': 'test1'}
+2022-09-26 03:16:29,876 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,876 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664151389.8768759, 'sender': 'test1'}
+2022-09-26 03:16:29,877 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664151389.8768759, 'sender': 'test1'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:16:29,878 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60427), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664151389.8768759, 'sender': 'test1'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,880 - client - functions:listen_and_get:31 - got message from senderNone {'response': 200}
+2022-09-26 03:16:29,880 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60426), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,881 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,881 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:16:29,892 - client - functions:listen_and_get:31 - got message from senderNone {'response': 200}
+2022-09-26 03:16:29,892 - client - client:main_loop:180 - all processed are launched
+2022-09-26 03:16:29,893 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60427), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,893 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,893 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:16:29,897 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:16:29,899 - client - client:main_loop:180 - all processed are launched
+2022-09-26 03:16:29,901 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:16:29,911 - client - functions:args_parser:80 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:16:29,913 - client - functions:args_parser:93 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:16:29,913 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,915 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test3 launched
+2022-09-26 03:16:29,915 - client - functions:say_hello:50 - made a greeting message {'action': 'presence', 'time': 1664151389.9157708, 'sender': 'test3'}
+2022-09-26 03:16:29,915 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test3',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:29,915 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664151389.9157708, 'sender': 'test3'}
+2022-09-26 03:16:29,917 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664151389.9157708, 'sender': 'test3'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:16:29,918 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60428), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664151389.9157708, 'sender': 'test3'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:30,123 - client - functions:listen_and_get:31 - got message from senderNone {'response': 200}
+2022-09-26 03:16:30,124 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60428), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:30,124 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:16:30,124 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:16:30,126 - client - client:main_loop:180 - all processed are launched
+2022-09-26 03:16:30,127 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:24:26,568 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:24:26,569 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:24:26,570 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,604 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:24:26,606 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:24:26,606 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,607 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+2022-09-26 03:24:26,607 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664151866.607687, 'sender': 'test2'}
+2022-09-26 03:24:26,608 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,608 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664151866.607687, 'sender': 'test2'}
+2022-09-26 03:24:26,609 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664151866.607687, 'sender': 'test2'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:24:26,610 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664151866.607687, "sender": "test2"}' has been successfully sent
+2022-09-26 03:24:26,612 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:24:26,613 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60568), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664151866.607687, 'sender': 'test2'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,613 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:24:26,614 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,615 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test3 launched
+2022-09-26 03:24:26,615 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664151866.615666, 'sender': 'test3'}
+2022-09-26 03:24:26,616 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test3',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,616 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664151866.615666, 'sender': 'test3'}
+2022-09-26 03:24:26,617 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664151866.615666, 'sender': 'test3'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:24:26,617 - client - functions:listen_and_get:31 - got message from sender @None@ {'response': 200}
+2022-09-26 03:24:26,617 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664151866.615666, "sender": "test3"}' has been successfully sent
+2022-09-26 03:24:26,618 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60568), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,618 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60569), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664151866.615666, 'sender': 'test3'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,618 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,618 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:24:26,622 - client - client:main_loop:180 - all processed are launched
+2022-09-26 03:24:26,624 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:24:26,630 - client - functions:listen_and_get:31 - got message from sender @None@ {'response': 200}
+2022-09-26 03:24:26,630 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60569), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,631 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:26,631 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:24:26,635 - client - client:main_loop:180 - all processed are launched
+2022-09-26 03:24:26,639 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:24:27,090 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 03:24:27,090 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664151867.090245, 'sender': 'test1'}
+2022-09-26 03:24:27,091 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:27,091 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664151867.090245, 'sender': 'test1'}
+2022-09-26 03:24:27,092 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664151867.090245, 'sender': 'test1'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:24:27,092 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664151867.090245, "sender": "test1"}' has been successfully sent
+2022-09-26 03:24:27,092 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60567), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664151867.090245, 'sender': 'test1'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:27,100 - client - functions:listen_and_get:31 - got message from sender @None@ {'response': 200}
+2022-09-26 03:24:27,101 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60567), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:27,101 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:24:27,101 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:24:27,103 - client - client:main_loop:180 - all processed are launched
+2022-09-26 03:24:27,105 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:30:27,219 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:30:27,220 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:30:27,221 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,222 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+2022-09-26 03:30:27,222 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152227.222115, 'sender': 'test2'}
+2022-09-26 03:30:27,223 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,223 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152227.222115, 'sender': 'test2'}
+2022-09-26 03:30:27,224 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152227.222115, 'sender': 'test2'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:30:27,224 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152227.222115, "sender": "test2"}' has been successfully sent
+2022-09-26 03:30:27,224 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60732), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152227.222115, 'sender': 'test2'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,229 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:30:27,230 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60732), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,231 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,231 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:30:27,233 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:30:27,236 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:30:27,237 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,237 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:30:27,238 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 03:30:27,239 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152227.2380729, 'sender': 'test1'}
+2022-09-26 03:30:27,239 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,239 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:30:27,239 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152227.2380729, 'sender': 'test1'}
+2022-09-26 03:30:27,240 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152227.2380729, 'sender': 'test1'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:30:27,240 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152227.2380729, "sender": "test1"}' has been successfully sent
+2022-09-26 03:30:27,241 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60733), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152227.2380729, 'sender': 'test1'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,457 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:30:27,458 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60733), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,458 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:30:27,458 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:30:27,461 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:30:27,464 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:30:59,711 - client - client:form_message:52 - message procecced
+2022-09-26 03:30:59,712 - client - functions:decode_message:19 - message has been decoded {'action': 'message', 'sender': 'test1', 'receiver': 'test1', 'time': 1664152259.711121, 'message_text': 'hello'}
+2022-09-26 03:30:59,713 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'message', 'sender': 'test1', 'receiver': 'test1', 'time': 1664152259.711121, 'message_text': 'hello'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:30:59,713 - client - functions:decode_and_send:41 - message: b'{"action": "message", "sender": "test1", "receiver": "test1", "time": 1664152259.711121, "message_text": "hello"}' has been successfully sent
+2022-09-26 03:30:59,715 - client - client:form_message:54 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60733), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'sender': 'test1', 'receiver': 'test1', 'time': 1664152259.711121, 'message_text': 'hello'}) , {}  
+from module client.py
+from function form_message
+
+2022-09-26 03:30:59,715 - client - client:form_message:55 - message for test1 from test1 has been successfully sent
+2022-09-26 03:30:59,716 - client - client:user_helper:130 - starting the log of deco
+run function form_message with parameters (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60733), raddr=('127.0.0.1', 7777)>, 'test1') , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:30:59,770 - client - functions:listen_and_get:31 - got message from sender @test1@ hello
+2022-09-26 03:30:59,771 - client - client:getting_message_from_server:98 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60733), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function getting_message_from_server
+
+2022-09-26 03:31:48,855 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:31:48,856 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:31:48,857 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,881 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:31:48,883 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:31:48,884 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,885 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 03:31:48,885 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152308.8859818, 'sender': 'test1'}
+2022-09-26 03:31:48,886 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,886 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152308.8859818, 'sender': 'test1'}
+2022-09-26 03:31:48,887 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152308.8859818, 'sender': 'test1'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:31:48,888 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152308.8859818, "sender": "test1"}' has been successfully sent
+2022-09-26 03:31:48,889 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60761), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152308.8859818, 'sender': 'test1'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,900 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:31:48,901 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60761), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,901 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,901 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:31:48,908 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:31:48,910 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:31:48,933 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:31:48,935 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:31:48,935 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,937 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test3 launched
+2022-09-26 03:31:48,937 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152308.937842, 'sender': 'test3'}
+2022-09-26 03:31:48,937 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test3',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:48,937 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152308.937842, 'sender': 'test3'}
+2022-09-26 03:31:48,939 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152308.937842, 'sender': 'test3'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:31:48,939 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152308.937842, "sender": "test3"}' has been successfully sent
+2022-09-26 03:31:48,941 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60762), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152308.937842, 'sender': 'test3'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:49,149 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:31:49,149 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60762), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:49,150 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:49,150 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:31:49,152 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:31:49,153 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:31:49,369 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+2022-09-26 03:31:49,369 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152309.3696702, 'sender': 'test2'}
+2022-09-26 03:31:49,370 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:49,370 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152309.3696702, 'sender': 'test2'}
+2022-09-26 03:31:49,371 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152309.3696702, 'sender': 'test2'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:31:49,371 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152309.3696702, "sender": "test2"}' has been successfully sent
+2022-09-26 03:31:49,371 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60760), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152309.3696702, 'sender': 'test2'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:49,374 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:31:49,375 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60760), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:49,375 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:31:49,375 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:31:49,377 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:31:49,379 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:32:58,857 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:32:58,859 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:32:58,860 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,862 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 03:32:58,862 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152378.862551, 'sender': 'test1'}
+2022-09-26 03:32:58,863 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,863 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152378.862551, 'sender': 'test1'}
+2022-09-26 03:32:58,863 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152378.862551, 'sender': 'test1'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:32:58,864 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152378.862551, "sender": "test1"}' has been successfully sent
+2022-09-26 03:32:58,864 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60785), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152378.862551, 'sender': 'test1'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,875 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:32:58,876 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60785), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,877 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,877 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:32:58,884 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:32:58,887 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:32:58,891 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:32:58,892 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:32:58,892 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,893 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test3 launched
+2022-09-26 03:32:58,894 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152378.8944666, 'sender': 'test3'}
+2022-09-26 03:32:58,894 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test3',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,894 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152378.8944666, 'sender': 'test3'}
+2022-09-26 03:32:58,895 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152378.8944666, 'sender': 'test3'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:32:58,896 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152378.8944666, "sender": "test3"}' has been successfully sent
+2022-09-26 03:32:58,896 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60786), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152378.8944666, 'sender': 'test3'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,902 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:32:58,903 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:32:58,904 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,906 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+2022-09-26 03:32:58,906 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152378.906434, 'sender': 'test2'}
+2022-09-26 03:32:58,907 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,907 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152378.906434, 'sender': 'test2'}
+2022-09-26 03:32:58,908 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152378.906434, 'sender': 'test2'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:32:58,908 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152378.906434, "sender": "test2"}' has been successfully sent
+2022-09-26 03:32:58,909 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60787), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152378.906434, 'sender': 'test2'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,915 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:32:58,915 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60786), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,916 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,916 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:32:58,922 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:32:58,923 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:32:58,923 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60787), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,923 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:32:58,923 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:32:58,924 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:32:58,926 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:32:58,928 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:33:28,470 - client - client:form_message:52 - message procecced
+2022-09-26 03:33:28,470 - client - functions:decode_message:19 - message has been decoded {'action': 'message', 'sender': 'test3', 'receiver': 'test1', 'time': 1664152408.4703097, 'message_text': 'hello'}
+2022-09-26 03:33:28,472 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'message', 'sender': 'test3', 'receiver': 'test1', 'time': 1664152408.4703097, 'message_text': 'hello'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:33:28,472 - client - functions:decode_and_send:41 - message: b'{"action": "message", "sender": "test3", "receiver": "test1", "time": 1664152408.4703097, "message_text": "hello"}' has been successfully sent
+2022-09-26 03:33:28,473 - client - client:form_message:54 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60786), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'sender': 'test3', 'receiver': 'test1', 'time': 1664152408.4703097, 'message_text': 'hello'}) , {}  
+from module client.py
+from function form_message
+
+2022-09-26 03:33:28,474 - client - client:form_message:55 - message for test1 from test3 has been successfully sent
+2022-09-26 03:33:28,475 - client - client:user_helper:130 - starting the log of deco
+run function form_message with parameters (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60786), raddr=('127.0.0.1', 7777)>, 'test3') , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:33:28,483 - client - functions:listen_and_get:31 - got message from sender @test3@ hello
+2022-09-26 03:33:28,484 - client - client:getting_message_from_server:98 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60785), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function getting_message_from_server
+
+2022-09-26 03:34:08,933 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:34:08,936 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:34:08,936 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,939 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test1 launched
+2022-09-26 03:34:08,939 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152448.9399614, 'sender': 'test1'}
+2022-09-26 03:34:08,940 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test1',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,940 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152448.9399614, 'sender': 'test1'}
+2022-09-26 03:34:08,941 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152448.9399614, 'sender': 'test1'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:34:08,941 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152448.9399614, "sender": "test1"}' has been successfully sent
+2022-09-26 03:34:08,941 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60807), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152448.9399614, 'sender': 'test1'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,949 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:34:08,949 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60807), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,950 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,950 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:34:08,954 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:34:08,955 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:34:08,956 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,957 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test3 launched
+2022-09-26 03:34:08,957 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152448.957913, 'sender': 'test3'}
+2022-09-26 03:34:08,958 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test3',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,958 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152448.957913, 'sender': 'test3'}
+2022-09-26 03:34:08,959 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152448.957913, 'sender': 'test3'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:34:08,959 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152448.957913, "sender": "test3"}' has been successfully sent
+2022-09-26 03:34:08,959 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60808), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152448.957913, 'sender': 'test3'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,962 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:34:08,963 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:34:08,964 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60808), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,965 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,965 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:34:08,975 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:34:08,978 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:34:08,979 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:34:08,993 - client - functions:args_parser:81 - starting the log of deco
+run function check_server_flag with parameters () , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:34:08,996 - client - functions:args_parser:94 - starting the log of deco
+run function check_port with parameters (7777,) , {}  
+from module client.py
+from function args_parser
+
+2022-09-26 03:34:08,997 - client - client:main_loop:150 - starting the log of deco
+run function args_parser with parameters () , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,998 - client - client:main_loop:156 - client with keys 127.0.0.1 - 7777 - listen - test2 launched
+2022-09-26 03:34:08,999 - client - functions:say_hello:51 - made a greeting message {'action': 'presence', 'time': 1664152448.9998016, 'sender': 'test2'}
+2022-09-26 03:34:08,999 - client - client:main_loop:158 - starting the log of deco
+run function say_hello with parameters ('test2',) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:08,999 - client - functions:decode_message:19 - message has been decoded {'action': 'presence', 'time': 1664152448.9998016, 'sender': 'test2'}
+2022-09-26 03:34:09,001 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'presence', 'time': 1664152448.9998016, 'sender': 'test2'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:34:09,001 - client - functions:decode_and_send:41 - message: b'{"action": "presence", "time": 1664152448.9998016, "sender": "test2"}' has been successfully sent
+2022-09-26 03:34:09,002 - client - client:main_loop:159 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60809), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1664152448.9998016, 'sender': 'test2'}) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:09,007 - client - functions:listen_and_get:31 - got message from sender @server@ {'response': 200}
+2022-09-26 03:34:09,007 - client - client:main_loop:160 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60809), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:09,008 - client - client:main_loop:161 - starting the log of deco
+run function hello_answer with parameters ({'response': 200},) , {}  
+from module client.py
+from function main_loop
+
+2022-09-26 03:34:09,008 - client - client:main_loop:162 - got server"s approve, 200 : ok
+2022-09-26 03:34:09,016 - client - client:main_loop:181 - all processed are launched
+2022-09-26 03:34:09,018 - client - client:user_helper:126 - starting the log of deco
+run function get_help with parameters () , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:34:23,462 - client - client:form_message:52 - message procecced
+2022-09-26 03:34:23,462 - client - functions:decode_message:19 - message has been decoded {'action': 'message', 'sender': 'test3', 'receiver': 'denis', 'time': 1664152463.462325, 'message_text': 'sfjfjd'}
+2022-09-26 03:34:23,463 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'message', 'sender': 'test3', 'receiver': 'denis', 'time': 1664152463.462325, 'message_text': 'sfjfjd'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:34:23,463 - client - functions:decode_and_send:41 - message: b'{"action": "message", "sender": "test3", "receiver": "denis", "time": 1664152463.462325, "message_text": "sfjfjd"}' has been successfully sent
+2022-09-26 03:34:23,465 - client - client:form_message:54 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60808), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'sender': 'test3', 'receiver': 'denis', 'time': 1664152463.462325, 'message_text': 'sfjfjd'}) , {}  
+from module client.py
+from function form_message
+
+2022-09-26 03:34:23,465 - client - client:form_message:55 - message for denis from test3 has been successfully sent
+2022-09-26 03:34:23,465 - client - client:user_helper:130 - starting the log of deco
+run function form_message with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60808), raddr=('127.0.0.1', 7777)>, 'test3') , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:35:09,042 - client - client:form_message:52 - message procecced
+2022-09-26 03:35:09,042 - client - functions:decode_message:19 - message has been decoded {'action': 'message', 'sender': 'test3', 'receiver': 'test2', 'time': 1664152509.0428784, 'message_text': 'ghgdslsffds'}
+2022-09-26 03:35:09,043 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'message', 'sender': 'test3', 'receiver': 'test2', 'time': 1664152509.0428784, 'message_text': 'ghgdslsffds'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:35:09,043 - client - functions:decode_and_send:41 - message: b'{"action": "message", "sender": "test3", "receiver": "test2", "time": 1664152509.0428784, "message_text": "ghgdslsffds"}' has been successfully sent
+2022-09-26 03:35:09,045 - client - client:form_message:54 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60808), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'sender': 'test3', 'receiver': 'test2', 'time': 1664152509.0428784, 'message_text': 'ghgdslsffds'}) , {}  
+from module client.py
+from function form_message
+
+2022-09-26 03:35:09,045 - client - client:form_message:55 - message for test2 from test3 has been successfully sent
+2022-09-26 03:35:09,046 - client - client:user_helper:130 - starting the log of deco
+run function form_message with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60808), raddr=('127.0.0.1', 7777)>, 'test3') , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:35:09,265 - client - functions:listen_and_get:31 - got message from sender @test3@ ghgdslsffds
+2022-09-26 03:35:09,268 - client - client:getting_message_from_server:98 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=516, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60809), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function getting_message_from_server
+
+2022-09-26 03:35:24,632 - client - client:form_message:52 - message procecced
+2022-09-26 03:35:24,633 - client - functions:decode_message:19 - message has been decoded {'action': 'message', 'sender': 'test1', 'receiver': 'test3', 'time': 1664152524.632287, 'message_text': 'dghdjdj'}
+2022-09-26 03:35:24,635 - client - functions:decode_and_send:39 - starting the log of deco
+run function decode_message with parameters ({'action': 'message', 'sender': 'test1', 'receiver': 'test3', 'time': 1664152524.632287, 'message_text': 'dghdjdj'},) , {}  
+from module client.py
+from function decode_and_send
+
+2022-09-26 03:35:24,635 - client - functions:decode_and_send:41 - message: b'{"action": "message", "sender": "test1", "receiver": "test3", "time": 1664152524.632287, "message_text": "dghdjdj"}' has been successfully sent
+2022-09-26 03:35:24,636 - client - client:form_message:54 - starting the log of deco
+run function decode_and_send with parameters (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60807), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'sender': 'test1', 'receiver': 'test3', 'time': 1664152524.632287, 'message_text': 'dghdjdj'}) , {}  
+from module client.py
+from function form_message
+
+2022-09-26 03:35:24,636 - client - client:form_message:55 - message for test3 from test1 has been successfully sent
+2022-09-26 03:35:24,637 - client - client:user_helper:130 - starting the log of deco
+run function form_message with parameters (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60807), raddr=('127.0.0.1', 7777)>, 'test1') , {}  
+from module client.py
+from function user_helper
+
+2022-09-26 03:35:24,709 - client - functions:listen_and_get:31 - got message from sender @test1@ dghdjdj
+2022-09-26 03:35:24,710 - client - client:getting_message_from_server:98 - starting the log of deco
+run function listen_and_get with parameters (<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60808), raddr=('127.0.0.1', 7777)>,) , {}  
+from module client.py
+from function getting_message_from_server
+
